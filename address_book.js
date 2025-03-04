@@ -33,3 +33,10 @@ function validateContact(contact) {
     if (!emailPattern.test(contact.email)) throw "Invalid Email";
 }
 
+
+// UC3: Ability to create Address Book array and add contacts
+let addressBook = [];
+function addContact(contact) {
+    validateContact(contact);
+    addressBook.push(contact);
+}
